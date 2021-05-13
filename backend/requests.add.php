@@ -104,7 +104,7 @@ else {
   $httpResponseCode = 400;
 
   // сообщить пользователю что доступ запрещен 
-  $answer = json_encode(array("message" => "Заказ не создан. Не удалось получить данные из фронтенд."));
+  $answer = json_encode(array("message" => "Заказ не создан. Не удалось получить данные из фронтенд. Ошибка 400!"));
 } 
 
 http_response_code($httpResponseCode);
